@@ -1,5 +1,5 @@
 public class Main {
-    public static void main(String[] args) { task1(); task2(); task3(); }
+    public static void main(String[] args) { task1(); task2(); task3(); task4(); }
     public static void task1() {
         System.out.println("Homework5");
         //Задание 1
@@ -45,5 +45,19 @@ public class Main {
         } else {
             System.out.println(year + " год не является високосным");
         }
+    }
+    public static void task4() {
+        //Задание 4
+        System.out.println(" ");
+        System.out.println("Задание 4"); // вычислить является год високосным или нет
+        int deliveryDistance = 95;
+        int days = 1;
+        if (deliveryDistance > 20) {
+            days = days + 1;
+        }
+        if (deliveryDistance > 60) {
+            days = days + 1;
+        }
+        System.out.println("Требуется дней: " + days);
     }
 }
