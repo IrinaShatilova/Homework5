@@ -1,5 +1,5 @@
 public class Main {
-    public static void main(String[] args) { task1(); task2(); task3(); task4(); }
+    public static void main(String[] args) { task1(); task2(); task3(); task4(); task5(); }
     public static void task1() {
         System.out.println("Homework5");
         //Задание 1
@@ -49,7 +49,7 @@ public class Main {
     public static void task4() {
         //Задание 4
         System.out.println(" ");
-        System.out.println("Задание 4"); // вычислить является год високосным или нет
+        System.out.println("Задание 4"); // вычислить сколько дней потребуется для доставки продукта
         int deliveryDistance = 95;
         int days = 1;
         if (deliveryDistance > 20) {
@@ -59,5 +59,36 @@ public class Main {
             days = days + 1;
         }
         System.out.println("Требуется дней: " + days);
+    }
+    public static void task5() {
+        //Задание 5
+        System.out.println(" ");
+        System.out.println("Задание 5"); // вычислить принадлежность к сезону по номеру месяца
+        int monthNumber = 12;
+        switch (monthNumber) {
+            case 1:
+            case 2:
+            case 12:
+                System.out.println("Это зима");
+                break;
+            case 3:
+            case 4:
+            case 5:
+                System.out.println("Это весна");
+                break;
+            case 6:
+            case 7:
+            case 8:
+                System.out.println("Это лето");
+                break;
+            case 9:
+            case 10:
+            case 11:
+                System.out.println("Это осень");
+                break;
+            default:
+                System.out.println("Такого месяца не существует");
+                break;
+        }
     }
 }
